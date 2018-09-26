@@ -1,10 +1,9 @@
 ---
 # defaults file for lynis
+lynis_version: 2.6.9
+lynis_version_sha256sum: 8fc68ef7f643327cbe0eb3616015d59225649ee4eccc2a632707857a573eb468
 
-lynis_version: 2.6.4
-lynis_version_sha256sum: df75f39abdbcf921d949dc9b8b1348fefb2ccca27bda9089a702312b0a7c3f31
-
-lynis_enterprise_key: 7a43dc9e-9430-45e9-94b3-aabbad3300b7
+# Lynis
 lynis_enterprise_srv: portal.cisofy.com
 
 lynis_src_directory: /usr/local/src
