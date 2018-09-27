@@ -42,7 +42,7 @@
     mode: 0555
 
 - name: "Configure Lynis Enterprise "
-  shell: "sh ./lynis configure settings license-key={{ 'env','lynis_key' }}:upload-server={{ lynis_enterprise_srv }}"
+  shell: "sh ./lynis configure settings license-key={{ 'env','LYNIS_KEY' }}:upload-server={{ lynis_enterprise_srv }}"
   args:
     chdir: "{{ lynis_dest_directory }}/lynis/"
 
