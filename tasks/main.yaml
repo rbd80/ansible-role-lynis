@@ -32,14 +32,14 @@
   register: lynis_rsync
   changed_when: lynis_rsync.stdout|int != 0
 
-- name: 'Create blank custom profile'
-  copy:
-    content: ""
-    dest: "{{ lynis_dest_directory }}/lynis/custom.prf"
-    force: no
-    group: sys
-    owner: root
-    mode: 0555
+#- name: 'Create blank custom profile'
+#  copy:
+#    content: ""
+#    dest: "{{ lynis_dest_directory }}/lynis/custom.prf"
+#    force: no
+#    group: sys
+#    owner: root
+#    mode: 0555
 
 - name: "Configure Lynis Enterprise "
   shell: "sh ./lynis configure settings license-key={{ lookup('lynis_key', 'Hello' ) }}:upload-server={{ lynis_enterprise_srv }}"
